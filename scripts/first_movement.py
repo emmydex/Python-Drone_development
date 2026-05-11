@@ -33,3 +33,30 @@ client.moveByVelocityAsync(5,0,0,3).join()
 print("Forward movement achieved!")
 
 
+# direction : hover
+client.hoverAsync().join()
+print("hovering")
+
+time.sleep(2)
+
+# direction : right
+print("Moving right..")
+client.moveByVelocityAsync(0,5,0,3).join()
+
+# direction : hover again
+client.hoverAsync().join()
+
+time.sleep(2)
+
+# direction : land
+client.landAsync().join()
+
+print("Landing...")
+
+# Disarm
+client.armDisarm(False)
+
+# Release control
+client.enableApiControl(False)
+
+print("Mission complete!")
