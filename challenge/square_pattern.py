@@ -64,8 +64,8 @@ client.landAsync().join()
 print("touchdown in T-5...")
 
 # disarm
-client.armDisarm(false)
+client.armDisarm(False)
 
 #release API control
-client.enableApiControl(false)
+client.enableApiControl(False)
 print("mission was a success!")
