@@ -147,7 +147,7 @@ Down     = +Z
 - Directional movement uses X, Y, and Z coordinates.
 - Hovering stabilizes the drone during missions.
 - Autonomous movement is controlled through programmable logic.
-
+- negative velocity
 ---
 
 ## Problems Encountered
