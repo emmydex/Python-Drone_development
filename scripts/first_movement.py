@@ -43,6 +43,15 @@ time.sleep(2)
 print("Moving right..")
 client.moveByVelocityAsync(0,5,0,3).join()
 
+# direction : backward
+client.moveByVelocityAsync(-4,0,0,3).join()
+print("Backward movement achieved!")
+
+# direction : movement left
+client.moveByVelocityAsync(0,-5,0,3).join()
+print("left is me oluwafemi")
+
+
 # direction : hover again
 client.hoverAsync().join()
 

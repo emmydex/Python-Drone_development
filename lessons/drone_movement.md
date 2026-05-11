@@ -128,6 +128,17 @@ Run script:
 python scripts/drone_movement.py
 ```
 
+## Adding a quick coordinate cheat sheet
+
+Forward  = +X
+Backward = -X
+
+Right    = +Y
+Left     = -Y
+
+Up       = -Z
+Down     = +Z
+
 ---
 
 ## Lessons Learned
