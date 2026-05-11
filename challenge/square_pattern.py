@@ -45,4 +45,20 @@ print("foward movement is attained")
 client.moveByVelocityAsync(0,7,0,3).join()
 print("right side of life")
 
+# direction : backward
+client.moveByVelocityAsync(-7,0,0,3).join()
+print(" i dont want to go back")
 
+
+# direction : left
+client.moveByVelocityAsync(0,-7,0,3).join()
+print("left the chat")
+
+# direction : hover again
+client.hoverAsync().join()
+
+time.sleep(3)
+
+# direction : landing
+client.landAsync().join()
+print("touchdown in T-5...")
