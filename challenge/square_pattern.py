@@ -62,3 +62,10 @@ time.sleep(3)
 # direction : landing
 client.landAsync().join()
 print("touchdown in T-5...")
+
+# disarm
+client.armDisarm(false)
+
+#release API control
+client.enableApiControl(false)
+print("mission was a success!")
