@@ -26,7 +26,7 @@ client.moveToZAsync(-10, 2).join()
 print("altitude reached")
 
 # foward movement
-client.moveByVeloctityAsync(5,0,0,3).join()
+client.moveByVelocityAsync(5,0,0,3).join()
 print ("foward movement is attained")
 
 #hovering
