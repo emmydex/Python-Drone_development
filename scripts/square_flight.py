@@ -58,11 +58,14 @@ client.hoverAsync().join()
 time.sleep(1)
 
 #landing
+print("landing....")
 client.landAsync().join()
+
 
 #disarm
 client.armDisarm(False)
 
 #realease Api control
 client.enableApiControl(False)
+
 print("mission accomplished")
