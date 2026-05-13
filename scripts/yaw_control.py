@@ -16,4 +16,27 @@ client.armDisarm(True)
 client.takeoffAsync().join()
 print("we in the sky")
 
+time.sleep(2)
 
+# upward movement
+client.moveToZAsync(-10, 2).join()
+print("reached altitude")
+
+# rotate 90 degrees yaw control
+print("rotating ...")
+client.rotateToYawAsync(90).join()
+
+time.sleep(2)
+
+#landing
+print("landing ...")
+client.landAsync().join()
+
+#disarm
+client.armDisarm(False)
+
+
+# realease control
+client.enableApiControl(False)
+
+print("mission was a success!") 
