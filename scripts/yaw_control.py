@@ -28,6 +28,12 @@ client.rotateToYawAsync(90).join()
 
 time.sleep(2)
 
+#moving forward
+print("moving forward..")
+client.moveByVelocityAsync(5,0,0,3).join()
+
+client.hoverAsync().join()
+
 #landing
 print("landing ...")
 client.landAsync().join()
