@@ -19,7 +19,7 @@ print("we in the sky")
 time.sleep(2)
 
 # upward movement
-client.moveToZAsync(-10, 2).join()
+client.moveToZAsync(-20, 2).join()
 print("reached altitude")
 
 # rotate 90 degrees yaw control
@@ -38,11 +38,11 @@ time.sleep(2)
 
 # another rotation
 print("rotating again")
-client.rotateToYawAsync(180).join()
+client.rotateToYawAsync(80).join()
 
 # another rotation
 print("rotating again")
-client.rotateToYawAsync(-90).join()
+client.rotateToYawAsync(-50).join()
 
 # moving forward again
 print("another forward movemnt")
