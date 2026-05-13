@@ -38,7 +38,21 @@ time.sleep(2)
 
 # another rotation
 print("rotating again")
+client.rotateToYawAsync(180).join()
+
+# another rotation
+print("rotating again")
 client.rotateToYawAsync(-90).join()
+
+# moving forward again
+print("another forward movemnt")
+client.moveByVelocityAsync(5,0,0,3).join()
+
+client.hoverAsync().join()
+
+time.sleep(2)
+
+
 
 #landing
 print("landing ...")
