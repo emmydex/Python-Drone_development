@@ -51,3 +51,11 @@ for i in range(10):
 
 #land 
 client.landAsync().join()
+
+# disarm
+client.enableApiControl(False)
+
+# relesing control
+client.enableApiControl(False)
+
+print("mission successful")
