@@ -20,9 +20,19 @@ print("drone armed")
 client.takeoffAsync().join()
 
 #fly upwards
-client.moveToZAsync(-10, 2).join()
+client.moveToZAsync(-20, 2).join()
 
 print("we in the sky !")
+
+
+#foward movent
+print("moving forward")
+client.moveByVelocityAsync(5,0,0,3).join()
+
+# right movement
+print("right movement")
+client.moveByVelocityAsync(0,5,0,3).join()
+
 
 #read telemetry data
 for i in range(10):
