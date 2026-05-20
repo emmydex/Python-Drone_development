@@ -18,10 +18,12 @@ client.takeoffAsync().join()
 client.moveToZAsync(-10, 2).join()
 
 # adding waypoints to a list
+# i tried to make a triangle instead of the initial square 
+# also changed the altitude of each waypoints
 
 waypoints = [
     (20, 10, -10),
-   (20, 20, -10),
+   (20, 20, -25),
     #(0, 20, -10),
     (0, 0, -10)
 ]
