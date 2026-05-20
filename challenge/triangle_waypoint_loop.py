@@ -21,9 +21,9 @@ client.moveToZAsync(-10, 2).join()
 
 waypoints = [
     (20, 10, -10),
-   # (20, 20, -10),
+   (20, 20, -10),
     #(0, 20, -10),
-    #0, 0, -10)
+    (0, 0, -10)
 ]
 
 # looping through waypoints
