@@ -17,6 +17,12 @@ client.takeoffAsync().join()
 
 time.sleep(2)
 
+# added foward direction to make it more interesting, you can remove it if you want
+print("Moving forward..")
+client.moveByVelocityAsync(5,0,0,3).join()
+print("Forward movement achieved!")
+
+
 #initial altitude
 client.moveToZAsync(-5, 2).join()
 print("checking telemetry")
@@ -46,6 +52,12 @@ else:
     print("altitude is safe.")
 
 time.sleep(2)
+
+# direction foward
+print("Moving forward..")
+client.moveByVelocityAsync(5,0,0,3).join()
+print("Forward movement achieved!")
+
 
 # hovering
 
