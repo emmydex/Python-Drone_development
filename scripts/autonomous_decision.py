@@ -18,9 +18,12 @@ client.takeoffAsync().join()
 time.sleep(2)
 
 # added foward direction to make it more interesting, you can remove it if you want
-print("Moving forward..")
-client.moveByVelocityAsync(5,0,0,3).join()
-print("Forward movement achieved!")
+#print("Moving forward..")
+#client.moveByVelocityAsync(5,0,0,3).join()
+#print("Forward movement achieved!")
+
+
+
 
 
 #initial altitude
@@ -44,20 +47,23 @@ if current_altitude > -10:
 
     print("climbing higher...")
 
-    client.moveToZAsync(-15, 3).join()
+    client.moveToZAsync(-35, 6).join()
     print("safe altitude achieved!")
 
 else:
 
     print("altitude is safe.")
 
+time.sleep(1)
+
+
+
+# trying move to position
+client.moveToPositionAsync(30,0,-10,2).join()
+
+
+# without this it crashes when it tries to land
 time.sleep(2)
-
-# direction foward
-print("Moving forward..")
-client.moveByVelocityAsync(5,0,0,3).join()
-print("Forward movement achieved!")
-
 
 # hovering
 
