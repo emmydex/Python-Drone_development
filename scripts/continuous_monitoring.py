@@ -48,3 +48,20 @@ for i in range(5):
         print("altitude is presummed safe")
 
     time.sleep(1)
+
+
+# hovering before landing
+client.hoverAsync().join()
+
+time.sleep(2)
+
+#landing
+client.landAsync().join()
+
+# disarming
+client.armDisarm(False)
+
+# realeasing Api control
+client.enableApiControl(False).join()
+
+print("milestone acheived")
