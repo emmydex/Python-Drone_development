@@ -34,4 +34,17 @@ for i in range(5):
     current_altitude = position.z_val
     print(f"Current altitude: {current_altitude}")
 
-    
+    # creating decision logic
+
+    if current_altitude > -10:
+
+        print("Altitude is unsafe!")
+        print("climbing to higher altitude")
+
+        client.moveToZAsync(-15, 3).join()
+        print("altitude corrected")
+
+    else:
+        print("altitude is presummed safe")
+
+    time.sleep(1)
