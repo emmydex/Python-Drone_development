@@ -16,7 +16,7 @@ client.armDisarm(True)
 client.takeoffAsync().join()
 
 # base altitude
-client.moveToSAsync(-5, 2).join()
+client.moveToZAsync(-5, 2).join()
 
 print("autonomous monitoring mission starting...")
 
@@ -62,6 +62,6 @@ client.landAsync().join()
 client.armDisarm(False)
 
 # realeasing Api control
-client.enableApiControl(False).join()
+client.enableApiControl(False)
 
 print("milestone acheived")
