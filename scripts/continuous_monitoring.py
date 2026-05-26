@@ -24,23 +24,29 @@ print("autonomous monitoring mission starting...")
 for i in range(5):
     print(f"\nMission cycle: {i+1}")
 
-    #move forward
+    #move forward with a speed of 5 m/s for 2 second
     client.moveByVelocityAsync(5, 0, 0, 2).join()
 
-    # read telemetry
+    # reading drone information known as telemetry
     state = client.getMultirotorState()
 
+    # this gets the drone position and location
     position = state.kinematics_estimated.position
+
+
+    # this gets the drone altitude
     current_altitude = position.z_val
     print(f"Current altitude: {current_altitude}")
 
     # creating decision logic
-
+    # the logic is -10 is lesser than the base altitude of -5 which is lower than the safe altitude
     if current_altitude > -10:
 
         print("Altitude is unsafe!")
         print("climbing to higher altitude")
 
+
+        # this tells the drone to move to a higher altitude of -15 with a speed of 3 m/s
         client.moveToZAsync(-15, 3).join()
         print("altitude corrected")
 
