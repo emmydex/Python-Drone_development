@@ -37,4 +37,12 @@ waypoints = [
 
 ]
 
+| Coordinate    | Meaning       |
+| ------------- | ------------- |
+| `(20,0,-10)`  | fly forward   |
+| `(20,20,-10)` | move right    |
+| `(0,20,-10)`  | move backward |
+| `(0,0,-10)`   | return home   |
+
+
 END
