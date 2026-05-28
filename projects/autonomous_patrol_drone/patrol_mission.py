@@ -62,6 +62,26 @@ for i in range(20):
 
 time.sleep(1)
 
+# current altitude
+current_altitude = position.z_val
+
+print(f"current altitude: {current_altitude}")
+
+# decision making based on altitude
+if current_altitude > -10:
+    print("altitude is low")
+
+    print("making decision to climb higher")
+
+    client.moveToZAsync(-25, 5).join()
+    print("safe altitude achieved")
+
+else:
+
+    print("current altitude is safe.")
+
+time.sleep(1)
+
 # hovering
 client.hoverAsync().join()
 
@@ -77,3 +97,6 @@ client.armDisarm(False)
 # release API control
 client.enableApiControl(False)
 
+
+
+print("project is a success oluwafemi")
