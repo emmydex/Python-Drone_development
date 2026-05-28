@@ -33,13 +33,39 @@ for point in waypoints:
     print(f"patrolling waypoint {point}")
     client.moveToPositionAsync(x, y, z, 3).join()
 
-# monitoring telemetry 
-state = client.getMultirotorState()
+# monitoring telemetry using for loop
+
+for i in range(20):
+
+    #this gets the current state of the drone
+    state = client.getMultirotorState()
+
+    # getting drone position
+    position = state.kinematics_estimated.position
+
+    # getting drone velocity
+    velocity = state.kinematics_estimated.linear_velocity
+
+    print("\n-- DATA FOR THIS PATROL DRONE--")
+
+    # getting position data
+    print(f"x position: {position.x_val:.2f}")
+    print(f"y position: {position.y_val:.2f}")
+    print(f"z position: {position.z_val:.2f}")
+
+    # getting velocity data
+    print(f"x velocity: {velocity.x_val:.2f}")
+    print(f"y velocity: {velocity.y_val:.2f}")
+    print(f"z velocity: {velocity.z_val:.2f}")
+
+
+
+time.sleep(1)
 
 # hovering
 client.hoverAsync().join()
 
-time.sleep(2)
+
 
 # landing
 client.landAsync().join()
