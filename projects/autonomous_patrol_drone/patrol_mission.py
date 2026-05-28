@@ -33,6 +33,9 @@ for point in waypoints:
     print(f"patrolling waypoint {point}")
     client.moveToPositionAsync(x, y, z, 3).join()
 
+# monitoring telemetry 
+state = client.getMultirotorState()
+
 # hovering
 client.hoverAsync().join()
 
