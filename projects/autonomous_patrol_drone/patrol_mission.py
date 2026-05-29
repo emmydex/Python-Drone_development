@@ -35,8 +35,19 @@ waypoints = [
 #looping through waypoints
 for point in waypoints:
     x, y, z = point
+
+    
+# implementing yaw rotation for rotation at checkpoints
+for waypoint in waypoints:
+    x, y, z = waypoint
     print(f"patrolling waypoint {point}")
     client.moveToPositionAsync(x, y, z, 3).join()
+
+    client.hoverAsync().join()
+
+    client.rotateToYawAsync(90).join()
+
+    print("scanning for stars")
 
 # monitoring telemetry using for loop
 
