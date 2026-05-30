@@ -21,6 +21,7 @@ client.moveToZAsync(-15,4).join()
 
 print("reached monitoring altitude")
 
+client.moveToPositionAsync(10, 0, -15, 3).join()
 
 print("\nStarting telemetry monitoring..\n")
 
