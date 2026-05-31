@@ -52,4 +52,11 @@ for i in range(20):
     print(f"y velocity: {vy:.2f}")
     print(f"z velocity: {z:.2f}")
 
+if z > -10:
+    print("altitude status: ⚠️ low altitude")
+
+else:
+    print("altitude status: ✅ safe altitude")
+
+
     time.sleep(1)
