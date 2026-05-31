@@ -59,4 +59,12 @@ else:
     print("altitude status: ✅ safe altitude")
 
 
+# hover detection
+
+if abs(vx) < 0.1 and abs(vz) < 0.1:
+    print("flight Status: 🟩 Hovering ")
+
+else:
+    print("Flight Status: reaching for the stars oluwafemi")
+
     time.sleep(1)
