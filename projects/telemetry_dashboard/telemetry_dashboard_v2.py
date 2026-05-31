@@ -50,7 +50,7 @@ for i in range(20):
 
     print(f"x velocity: {vx:.2f}")
     print(f"y velocity: {vy:.2f}")
-    print(f"z velocity: {z:.2f}")
+    print(f"z velocity: {vz:.2f}")
 
 if z > -10:
     print("altitude status: ⚠️ low altitude")
