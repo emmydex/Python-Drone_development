@@ -99,6 +99,8 @@ Examples:
 telemetry_dashboard/
 │
 ├── telemetry_dashboard.py
+├── telemetry_dashboard_v2.py
+├── telemetry_dashboard_v3.py
 ├── README.md
 ├── observations.md
 └── future_improvements.md
