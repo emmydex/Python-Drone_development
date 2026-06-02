@@ -52,19 +52,20 @@ for i in range(20):
     print(f"y velocity: {vy:.2f}")
     print(f"z velocity: {vz:.2f}")
 
-if z > -10:
-    print("altitude status: ⚠️ low altitude")
+    # altitude check
+    if z > -10:
+        print("altitude status: ⚠️ low altitude")
 
-else:
-    print("altitude status: ✅ safe altitude")
+    else:
+        print("altitude status: ✅ safe altitude")
 
 
-# hover detection
+    # hover detection
 
-if abs(vx) < 0.1 and abs(vz) < 0.1:
-    print("flight Status: 🟩 Hovering ")
+    if abs(vx) < 0.1 and abs(vz) < 0.1:
+        print("flight Status: 🟩 Hovering ")
 
-else:
-    print("Flight Status: reaching for the stars oluwafemi")
+    else:
+        print("Flight Status: reaching for the stars oluwafemi")
 
-    time.sleep(1)
+        time.sleep(1)
