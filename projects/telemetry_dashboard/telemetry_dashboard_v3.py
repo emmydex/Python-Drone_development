@@ -23,6 +23,15 @@ print("reached monitoring altitude")
 
 client.moveToPositionAsync(10, 0, -15, 3).join()
 
+# adding mission variables
+
+total_waypoints = 4
+current_waypoint = 2
+mission_status = "patrol"
+
+#calculating progress
+progress = (current_waypoint / total_waypoints) * 100
+
 print("\nStarting telemetry monitoring..\n")
 
 for i in range(20):
