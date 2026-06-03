@@ -65,6 +65,8 @@ for i in range(20):
         (position.z_val - home_position.z_val) ** 2 
     ) ** 0.5
 
+    
+
     print("\n==========================")
     print(" 📊 TELEMETRY DASHBOARD")
     print("============================")
@@ -82,7 +84,7 @@ for i in range(20):
     print(f"mission status : {mission_status}")
     print(f"waypoint : {current_waypoint}/{total_waypoints}")
     print(f"progress : {progress :.0f}%")
-
+    print(f"distance_from_home : {distance_from_home :.2f} m")
     # altitude check
     if z > -10:
         print("altitude status: ⚠️ low altitude")
