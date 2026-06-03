@@ -32,6 +32,17 @@ mission_status = "patrol"
 #calculating progress
 progress = (current_waypoint / total_waypoints) * 100
 
+# calculating distance from home
+distance_from_home = ((x ** 2) + (y ** 2)) ** 0.5
+
+# mission section
+print("\nMISSION DATA")
+print(f"mission status : {mission_status}")
+print(f"waypoint : {current_waypoint}/{total_waypoints}")
+print(f"progress : {progress :.0f}%")
+print(f"distance from home : {distance_from_home:.2f} m")
+
+
 print("\nStarting telemetry monitoring..\n")
 
 for i in range(20):
