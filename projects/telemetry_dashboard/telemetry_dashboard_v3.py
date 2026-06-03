@@ -33,14 +33,13 @@ mission_status = "patrol"
 progress = (current_waypoint / total_waypoints) * 100
 
 # calculating distance from home
-distance_from_home = ((x ** 2) + (y ** 2)) ** 0.5
+# distance_from_home = ((x ** 2) + (y ** 2)) ** 0.5
 
-# mission section
-print("\nMISSION DATA")
-print(f"mission status : {mission_status}")
-print(f"waypoint : {current_waypoint}/{total_waypoints}")
-print(f"progress : {progress :.0f}%")
-print(f"distance from home : {distance_from_home:.2f} m")
+# a better logical approach
+home_position = airsim.Vector3r(0, 0, -15)
+
+
+
 
 
 print("\nStarting telemetry monitoring..\n")
@@ -60,6 +59,12 @@ for i in range(20):
     vy = velocity.y_val
     vz = velocity.z_val
 
+    distance_from_home =(
+        (position.x_val - home_position.x_val) ** 2 +
+        (position.y_val - home_position.y_val) ** 2 +
+        (position.z_val - home_position.z_val) ** 2 
+    ) ** 0.5
+
     print("\n==========================")
     print(" 📊 TELEMETRY DASHBOARD")
     print("============================")
@@ -71,6 +76,12 @@ for i in range(20):
     print(f"x velocity: {vx:.2f}")
     print(f"y velocity: {vy:.2f}")
     print(f"z velocity: {vz:.2f}")
+
+        # mission section
+    print("\nMISSION DATA")
+    print(f"mission status : {mission_status}")
+    print(f"waypoint : {current_waypoint}/{total_waypoints}")
+    print(f"progress : {progress :.0f}%")
 
     # altitude check
     if z > -10:
