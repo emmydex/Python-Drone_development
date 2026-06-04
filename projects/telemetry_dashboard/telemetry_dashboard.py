@@ -43,3 +43,14 @@ for i in range(20):
     print(f"z velocity: {velocity.z_val:.2f}")
 
     time.sleep(1)
+
+# landing
+client.landAsync().join()
+
+# disarming
+client.armDisarm(False)
+
+# realising api control
+client.enableApiControl(False)
+
+print("\nTelemetry monitoring ended. Drone landed and disarmed.")
