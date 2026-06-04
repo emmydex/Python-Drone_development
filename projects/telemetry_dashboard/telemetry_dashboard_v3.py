@@ -102,3 +102,14 @@ for i in range(20):
         print("Flight Status: reaching for the stars oluwafemi")
 
         time.sleep(1)
+
+# landing
+client.landAsync().join()
+
+# disarming
+client.armDisarm(False)
+
+# realising api control
+client.enableApiControl(False)
+
+print("Telemetry monitoring ended. mission Accomplished")
