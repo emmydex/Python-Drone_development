@@ -1,0 +1,16 @@
+mission started
+takeoff complete
+waypoint 1 reached
+landing complete
+mission started
+takeoff complete
+waypoint 1 reached
+landing complete
+mission started
+takeoff complete
+waypoint 1 reached
+landing complete
+mission started
+takeoff complete
+waypoint 1 reached
+landing complete
