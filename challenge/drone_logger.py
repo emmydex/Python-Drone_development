@@ -5,13 +5,21 @@ import time
 client = airsim.MultirotorClient()
 client.confirmConnection()
 
+
+ # logger function
+def log_event(message):
+    with open("drone_logger.txt", "a") as log:
+        log.write(message + "\n")
+
 client.enableApiControl(True)
 
 client.armDisarm(True)
 
 client.takeoffAsync().join()
+log_event("mission started")
+log_event("takeoff complete")
 
-client.moveToZAsync(-5, 0, -10, 2).join()
+client.moveToZAsync(-10, 2).join()
 
 
 waypoints = [
@@ -21,10 +29,6 @@ waypoints = [
     (0, 0, -10)
 ]
 
-
-def log_event(message):
-    with open("drone_logger.txt", "a") as log:
-        log.write(message + "\n")
 
 
 
@@ -52,6 +56,11 @@ for i in range(len(waypoints)):
 
     time.sleep(2)
 
+
+# landing
+client.landAsync().join()
+log_event("landing complete")
+log_event("mission complete")
 
 
 # disarm
