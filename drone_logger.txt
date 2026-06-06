@@ -1,0 +1,9 @@
+waypoint 1 reached at coordinates (20, 0, -10)
+scan complete 1
+waypoint 2 reached at coordinates (20, 20, -10)
+scan complete 2
+waypoint 3 reached at coordinates (0, 20, -10)
+scan complete 3
+waypoint 4 reached at coordinates (0, 0, -10)
+scan complete 4
+mission completed
