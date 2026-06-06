@@ -1,6 +1,8 @@
 import airsim
 import time
 
+from datetime import datetime
+
 #connect to airsim
 client = airsim.MultirotorClient()
 client.confirmConnection()
@@ -8,14 +10,19 @@ client.confirmConnection()
 
  # logger function
 def log_event(message):
+    timestamp = datetime.now().strftime("%H:%M:%S")
+
     with open("drone_logger.txt", "a") as log:
-        log.write(message + "\n")
+        log.write(f"[{timestamp}] {message}\n")
 
 client.enableApiControl(True)
 
 client.armDisarm(True)
 
 client.takeoffAsync().join()
+
+# added a separator 
+log_event("\n==================")
 log_event("mission started")
 log_event("takeoff complete")
 
