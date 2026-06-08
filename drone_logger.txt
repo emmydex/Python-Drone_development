@@ -32,3 +32,17 @@ scan complete 4
 [16:05:40] landing complete
 [16:05:40] mission complete
 [16:05:40] mission completed
+[16:07:20] 
+==================
+[16:07:20] mission started
+[16:07:20] takeoff complete
+[16:07:32] waypoint 1 reached at coordinates (20, 0, -10)
+[16:07:35] scan complete 1
+[16:07:45] waypoint 2 reached at coordinates (20, 20, -10)
+[16:07:48] scan complete 2
+[16:07:58] waypoint 3 reached at coordinates (0, 20, -10)
+[16:08:01] scan complete 3
+[16:08:11] waypoint 4 reached at coordinates (0, 0, -10)
+[16:08:13] scan complete 4
+[16:09:11] landing complete
+[16:09:11] mission completed
