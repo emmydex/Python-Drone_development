@@ -67,7 +67,7 @@ for i in range(len(waypoints)):
 # landing
 client.landAsync().join()
 log_event("landing complete")
-log_event("mission complete")
+
 
 
 # disarm
