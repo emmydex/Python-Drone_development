@@ -46,3 +46,67 @@ scan complete 4
 [16:08:13] scan complete 4
 [16:09:11] landing complete
 [16:09:11] mission completed
+[08:03:15] MISSION STARTED
+[08:03:18] 
+==================
+[08:03:18] mission started
+[08:03:18] takeoff complete
+[08:03:31] waypoint 1 reached at coordinates (20, 0, -10)
+[08:03:34] scan complete 1
+[08:03:43] waypoint 2 reached at coordinates (20, 20, -10)
+[08:03:46] scan complete 2
+[08:03:56] waypoint 3 reached at coordinates (0, 20, -10)
+[08:03:59] scan complete 3
+[08:04:09] waypoint 4 reached at coordinates (0, 0, -10)
+[08:04:12] scan complete 4
+[08:05:09] landing complete
+[08:05:09] =========================
+[08:05:09] MISSION SUMMARY
+[08:05:09] =========================
+[08:05:09] Total waypoints visited: 4
+[08:05:09] Mission duration: 114.57 seconds
+[08:05:09] Mission status: success
+[08:36:20] MISSION STARTED
+[08:36:24] 
+==================
+[08:36:24] mission started
+[08:36:24] takeoff complete
+[08:36:36] waypoint 1 reached at coordinates (20, 0, -10)
+[08:36:39] scan complete 1
+[08:36:49] waypoint 2 reached at coordinates (20, 20, -10)
+[08:36:52] scan complete 2
+[08:37:02] waypoint 3 reached at coordinates (0, 20, -10)
+[08:37:05] scan complete 3
+[08:37:15] waypoint 4 reached at coordinates (0, 0, -10)
+[08:37:18] scan complete 4
+[08:38:15] landing complete
+[08:38:15] =========================
+[08:38:15] MISSION SUMMARY
+[08:38:15] =========================
+[08:38:15] mission started at: 1781008580.890091
+[08:38:15] mission ended at: 1781008695.3475878
+[08:38:15] Total waypoints visited: 4
+[08:38:15] Mission duration: 114.46 seconds
+[08:38:15] Mission status: success
+[08:41:11] MISSION STARTED
+[08:41:14] 
+==================
+[08:41:14] mission started
+[08:41:14] takeoff complete
+[08:41:27] waypoint 1 reached at coordinates (20, 0, -10)
+[08:41:30] scan complete 1
+[08:41:40] waypoint 2 reached at coordinates (20, 20, -10)
+[08:41:42] scan complete 2
+[08:41:52] waypoint 3 reached at coordinates (0, 20, -10)
+[08:41:55] scan complete 3
+[08:42:05] waypoint 4 reached at coordinates (0, 0, -10)
+[08:42:08] scan complete 4
+[08:43:06] landing complete
+[08:43:06] =========================
+[08:43:06] MISSION SUMMARY
+[08:43:06] =========================
+[08:43:06] mission started at: 08:41:11
+[08:43:06] mission ended at: 08:43:06
+[08:43:06] Total waypoints visited: 4
+[08:43:06] Mission duration: 114.83 seconds
+[08:43:06] Mission status: success
