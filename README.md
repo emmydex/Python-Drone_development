@@ -101,8 +101,16 @@ Upcoming:
 ```text
 Drone-Programming-Path/
 │
+├── challenge/
+│   ├── drone_logger.py
+│   ├── square_pattern.py
+│   ├── triangle_waypoint_loop.py
+│   ├── yaw_challenge.py
+│   
 ├── lessons/
-│   ├── lesson1_drone_basics.md
+│   ├── Airsim_Setup.md
+│   ├── drone_basics.md
+│   ├── square_flight.md
 │   ├── first_flight.md
 │   ├── drone_movement.md
 │   ├── yaw_control.md
@@ -110,6 +118,14 @@ Drone-Programming-Path/
 │   ├── waypoint_loops.md
 │   ├── continuous_monitoring.md
 │
+├── projects/
+│   ├── autonomous_patrol_drone/
+│   ├── mission_logger_drone/
+│   ├── obstacle_avoidance_drone/
+│   ├── telemetry_dashboard/
+│   ├── return_to_home_system/
+│   
+├── screenshots/
 ├── scripts/
 │   ├── first_flight.py
 │   ├── drone_movement.py
@@ -120,6 +136,8 @@ Drone-Programming-Path/
 │   ├── autonomous_decision.py
 │   ├── continuous_monitoring.py
 │
+├── drone_logger.txt
+├── flight_log.txt
 ├── setup_notes.md
 ├── README.md
 └── .gitignore
