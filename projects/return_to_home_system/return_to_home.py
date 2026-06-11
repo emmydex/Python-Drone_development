@@ -35,6 +35,17 @@ print(
 # moving to location
 client.moveToPositionAsync(15, 0, -10, 5).join()
 
+state = client.getMultirotorState()
+position = state.kinematics_estimated.position
+
+
+print('after flying away:')
+print(
+    position.x_val,
+    position.y_val,
+    position.z_val
+)
+
 # then drone moves back to home
 client.moveToPositionAsync(
     home_x,
@@ -42,6 +53,17 @@ client.moveToPositionAsync(
     home_z,
     3
 ).join()
+
+state = client.getMultirotorState()
+position = state.kinematics_estimated.position
+
+
+print('after returning:')
+print(
+    position.x_val,
+    position.y_val,
+    position.z_val
+)
 
 print("home position")
 print(
