@@ -17,16 +17,35 @@ client.takeoffAsync().join()
 # mission altitude
 client.moveToZAsync(-10, 5).join()
 
-# passing home position to the variable
-home_position = client.getMultirotorState().kinematics_estimated.position
+# this gets and stores the current position
+state = client.getMultirotorState()
+position = state.kinematics_estimated.position
 
-print("home position saved")
+home_x = position.x_val
+home_y = position.y_val
+home_z = position.z_val
+
+print('current position:')
 print(
-    home_position.x_val,
-    home_position.y_val,
-    home_position.z_val
-    )
+    position.x_val,
+    position.y_val,
+    position.z_val
+)
 
+# then drone moves back to home
+client.moveToPositionAsync(
+    home_x,
+    home_y,
+    home_z,
+    3
+).join()
+
+print("home position")
+print(
+    home_x,
+    home_y,
+    home_z
+)
 time.sleep(1)
 
 #hovering
