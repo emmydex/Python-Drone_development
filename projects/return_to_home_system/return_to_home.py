@@ -32,6 +32,9 @@ print(
     position.z_val
 )
 
+# moving to location
+client.moveToPositionAsync(15, 0, -10, 5).join()
+
 # then drone moves back to home
 client.moveToPositionAsync(
     home_x,
