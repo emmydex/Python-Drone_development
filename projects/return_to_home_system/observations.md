@@ -76,6 +76,8 @@ Position data is one of the most valuable debugging tools in robotics.
 
 ---
 
+
+
 ## Observation 5: Home Coordinates Should Be Stored as Values
 
 Instead of relying on a position object, storing:
@@ -104,6 +106,8 @@ It protects the drone when:
 * The battery becomes low
 * Communication is lost
 * An emergency occurs
+
+
 
 ### Lesson
 
